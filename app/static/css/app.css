@@ -1,3 +1,20 @@
 body {
     padding-top: 5rem;
+    background-color: aquamarine;
+}
+
+.Top Container{
+    margin: 0px 0px 0px 0px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(18, 176, 197);
+    color: white;
+}
+
+.Lower Container{
+    margin: 0px 0px 0px 0px; 
+    background-color: 00000;
+    width: 100px;
+    height: 50px;
+    color: rgb(5, 48, 112);
 }
