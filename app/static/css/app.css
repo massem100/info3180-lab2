@@ -1,9 +1,6 @@
 body {
     padding-top: 5rem;
-    align-items: center;
-    
-}
-
+   }
 
 #Top{
    margin: 0px 0px 0px 30px;
@@ -12,7 +9,7 @@ body {
    background-image: radial-gradient(rgb(10, 102, 122), rgb(1, 52, 80));
    border-radius: 10px 10px 0px 0px;
    text-align: center;
-    /* border: solid 1px rgb(54, 54, 54); */
+   
 }
 
 #Lower{
@@ -25,7 +22,7 @@ body {
    width: 420px;
    height: 200px;
    background-color: white;
-  border: solid 1px rgb(204, 204, 204);
+   border: solid 1px rgb(204, 204, 204);
    border-radius: 0px 0px 10px 10px;
    align-items: center;
    justify-content: center;
@@ -61,15 +58,13 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: white;
-    /* text-shadow: 2px 1px #504f4f; */
 } 
 
 .Stats{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}  
+  }  
 
 #Headings{
     display: flex;
@@ -85,26 +80,20 @@ img {
     margin: 0px 0px 0px 2px;
     width: 200px;
     color:rgb(0, 0, 0);
-    align-items: stretch;
-    justify-content: center;
-    /* background-color: aquamarine;
-     */
     
-   
-    }
+    justify-content: center;
+} 
 h6{
     margin: 10px 30px 5px 20px;
     color: #414040;
     font-size: 18px;
-    align-items: center;
-    justify-items: center;
+   
 }
 h4{
     margin: 5px 10px 10px 20px;
     color:rgb(119, 119, 119);
     font-size: 15px;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 button{
