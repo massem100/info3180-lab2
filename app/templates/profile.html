@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head> 
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>My Profile</title>
-        <meta>  
-        <link rel="stylesheet" type="text/css" href="url_for('static', filename='app.css')"/>
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 
     </head>
+    {% extends 'base.html' %}
     <body>
-        <div class= "Top Container"> 
-            <img src = "/app/static/image/pic.jpg">
-            <h3> Krystall Messam</h3>
-            <h6> @massem100</h6>
-            <h6> Kingston, Jamaica</h6>
-            <h6>date_joined()</h6>
+        {% block main %}
+        <div id = pro_box>
+                <div id= "Top"> 
+                    <img src="{{ url_for('static', filename='image/pic.jpg') }}">
+                    <h5 id = "name"> Krystall Messam</h5>
+                    <div id= "details">
+                        <h5> @massem100</h5>
+                        <h5> Kingston, Jamaica</h5>
+                        <h5> {{date_joined }}</h5>
+                    </div>
 
+                </div>
+                
+                <div id= "Lower"> 
+                    <p id = "bio"> 
+                        God first, everything second. A lover of Art and Design. Third year Computer Science and
+                        Accounting major. Be unapologetically yourself.
+                    </p>
+
+                    <div class = "Stats"> 
+                        <div id ="Numbers" >
+                            <h6> 30</h6>
+                            <h6> 972</h6>
+                            <h6> 967</h6>
+                        </div>
+
+                        <div id = "Headings">
+                            <h4> Posts</h4>
+                            <h4> Following</h4>
+                            <h4> Followers </h4>
+                        </div>
+                    </div>
+
+                    <button> Follow </button>
+
+                </div>
         </div>
-        <div class = "Lower Container"> 
-            <p id = "bio"> 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur possimus doloremque perspiciatis quae? Mollitia corporis magnam autem. Esse molestiae minima ratione provident eligend
-                vero laudantium voluptate tempora maxime tenetur. Voluptas?
-            </p>
-
-            <div> 
-                <h6> 30  posts</h6>
-                <h6> 972 Following</h6>
-                <h6> 967  Followers </h6>
-            </div>
-           <button> Follow </button>
-        </div>
-
+        {% endblock %}
     </body>
 </html> 
